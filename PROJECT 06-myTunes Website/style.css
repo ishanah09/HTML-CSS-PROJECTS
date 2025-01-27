@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  line-height: 1.4;
+  list-style: none;
+}
+html,
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+button {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.25s ease-in-out;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #270082;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+  padding: 1.25rem 2rem;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 300;
+}
+
+nav ul li {
+  border-bottom: 1px solid transparent;
+}
+
+nav ul li:hover {
+  border-bottom: 1px solid white;
+  transition: 0.3 ease-in;
+}
+
+
+.hero-section {
+  min-height: 100vh;
+  background-image: url(./images/hero_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  color: white;
+}
+.hero-section h1 {
+  font-size: clamp(2.25rem, 10vw, 5rem);
+}
+.hero-section h2 {
+  font-size: clamp(1rem, 5vw, 2.5rem);
+}
+.hero-section p {
+  font-weight: 300;
+}
+
+.music-section {
+  background-color: #281154;
+  color: white;
+  padding: 1.5rem;
+}
+
+.music-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.music-section h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.music-section p {
+  font-weight: 300;
+}
+
+.music-section .container button {
+  background-color: #dc0000;
+  color: white;
+}
+.music-section .phone-image {
+  width: 85%;
+  padding: 1rem;
+  margin-top: -30vw;
+  position: relative;
+  top: 30vw;
+}
+.music-section .phone-image img {
+  width: 100%;
+}
+
+.about-music {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+.about-music .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 33vw;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+.about-music .mac-img {
+  width: 85%;
+  padding: 1rem;
+}
+.about-music .mac-img img {
+  width: 100%;
+}
+.about-music p {
+  font-weight: 300;
+}
+.about-music button {
+  background-color: #270084;
+  color: white;
+}
+
+.video-section {
+  min-height: 100vh;
+  background-image: url(./images/video.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  color: white;
+}
+.video-section .container h4 {
+  font-size: 1.5rem;
+
+  font-weight: 600;
+}
+.video-section .container p {
+  font-weight: 300;
+}
+
+.gift-section {
+  display: flex;
+}
+.gift-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+.gift-section .container .image {
+  padding: 1rem;
+  width: max(60%, 150px);
+}
+.gift-section .container .image img {
+  width: 100%;
+}
+.gift-section .container .text-content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: justify;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.gift-section h4 {
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+.gift-section p {
+  font-weight: 300;
+}
+
+.divider {
+  border: 1px solid gray;
+  align-self: stretch;
+}
+.gift-section button {
+  background-color: #270082;
+  color: white;
+}
+
+footer {
+  background-color: #1b0058;
+  color: white;
+}
+footer .footer-upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 1.5rem;
+  gap: 2rem;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.75rem;
+}
+footer .footer-links h4 {
+  border-bottom: 1px solid white;
+  padding: 0.5rem 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+footer .footer-links li {
+  font-weight: 300;
+  text-align: start;
+}
+
+footer .footer-lower {
+  background-color: #270082;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .gift-section .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+
+  footer .footer-upper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
